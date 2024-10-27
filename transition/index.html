@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transitions</title>
+	
+    <style>
+		
+body {
+font-family: sans-serif;
+font-size: 30px;
+color: #FFF;
+        }
+
+.cardholder {
+text-align: center;
+        }
+
+.card {
+position: relative;
+background-color: lavender;
+display: inline-block;
+        }
+
+.card img {
+width: 100%;
+height: auto;
+filter: blur(100px); 
+transition: filter 1s ease; 
+        }
+
+.card:hover img {
+filter: blur(0px); 
+        }
+		
+.center {
+padding: 60% O;
+text-align: center;
+    }
+		
+.card_overlay{
+position:absolute;
+background-color: black;
+width:100%;
+height:100%;
+transition: .5s ease;	
+    }
+
+.card:hover .card_overlay{
+opacity: .2;
+    }
+		
+.card_text {
+margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="cardholder">
+        <div class="card">
+			 <div class="card_overlay"><p class="center">YOUR NEXT DESTINATION</p></div>
+            <img src="img/paris.jpg" alt="paris">
+        </div>
+    </div>
+</body>
+</html>
