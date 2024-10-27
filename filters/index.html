@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filters</title>
+
+	<style>
+	body {
+	display: flex;
+	justify-content: center; 
+	align-items: center; 
+	height: 100vh; 
+	margin: 0; 
+	}
+		
+     .my_filter{
+
+	width: 500px; 
+	height: auto; 
+    -webkit-filter: blur:(20px) sepia(1); 
+    filter: blur(20px) sepia(1);
+     }
+		
+
+    .my_filter:hover{
+      animation: 1s myfilteranimation forwards;
+    }
+
+     @keyframes myfilteranimation{
+	      100%{
+	       -webkit-filter: blur:(0px) sepia(0); 
+	        filter: blur(0px) sepia(0);
+	       }
+     }
+
+
+	</style>
+</head>
+<body>
+
+<img class="my_filter" src="img/flower.jpg" alt="flower">
+
+</body>
+</html>
