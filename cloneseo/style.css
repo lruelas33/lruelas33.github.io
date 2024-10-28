@@ -1,0 +1,324 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.roboto-condensed-<uniquifier> {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+	font-family: "Roboto Condensed", sans-serif;
+	text-decoration-color: white;
+    font-size: 18px;
+}
+
+.outer {
+    text-align: center;
+	padding:20px;
+}
+
+.page {
+    position: relative;
+    margin-top: 0px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    height: 100vh;
+	text-align:center;
+	padding:10px;
+}
+
+.logo_img{
+	width: 25%;	
+}
+
+
+.search_img{
+	width: 200%;
+	padding-right: 50px;
+	padding-top: 0px;
+	
+	
+}
+
+/* Sticky Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: darkgrey;
+	opacity: .8;
+    z-index: 1000;
+    width: 100%;
+    text-align: center;	
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    color: white;
+    text-align: left;
+    padding: 14px;
+	font-weight: 200px;
+	font-size:15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: red;
+}
+
+.navbar ul li a:active {
+    color: gray;
+}
+
+
+.image{
+	position: absolute;
+	background-color: white;
+	width: 100%;
+	height: 10%;
+	opacity:.8;
+}
+.tile{
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:1280px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center; 
+}
+
+.nav-menu li {
+    margin: 0 10px; 
+}
+
+.topofpage{
+	display: flex;
+    align-items: left;
+}
+
+
+
+
+/* HERO IMAGE */
+.hero_content{
+	font-size:12px;
+	text-align: left;
+	color: white;
+}
+
+.hero_content:hover{
+	background-color: black;
+	transform: scale(1.02,1.02);
+}
+
+.hero_text_headline{
+	font-weight: bold;
+	font-size: 20px;
+	padding-top: 10px;
+	color: red;
+}
+
+.hero_content img{
+	width:100%;
+}
+
+.hero_content2 img{
+	width:100%;
+	padding-bottom: 30px;
+}
+
+
+
+/* SIDEBAR COMPONENT */
+
+.side_bar{
+  max-height:100%;
+  overflow: auto;
+  margin-top:20px;
+  margin-bottom:20px;
+  text-align: left;
+  font-size: 12px;
+  color: white;
+}
+
+.side_bar:hover{
+	background-color: black;
+	transform: scale(1.05,1.05);
+}
+
+.side_bar .section{
+   color: red;
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 15px;
+}
+
+.side_bar img{
+	float: right;
+	max-height: 100px;
+	padding-top: 10px;
+}
+
+
+/* [class^="side_bar"] element that starts with */
+div [class^="side_bar"]:first-of-type {
+    margin: 0px;
+	
+   
+}
+
+div [class^="side_bar"]:last-of-type {
+    margin: 0px;
+   
+}
+
+
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==== GRID SYSTEM ==== */
+
+.container {
+  width: 96%;
+  margin:auto;
+ 
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0% 0%;
+  min-height: 0.125rem;
+  height:100%;
+
+}
+
+
+.col-1 {
+    width: 8.33%;
+    background: rgba(102,51,153,.1);
+  }
+
+  .col-2 {
+    width: 16.66%;
+    background: rgba(102,51,153,.2);
+  }
+
+  .col-3 {
+    width: 25%;
+    background: rgba(102,51,153,.3);   
+  }
+
+  .col-4 {
+    width: 33.33%;
+    background: rgba(102,51,153,.4);
+  }
+
+  .col-5 {
+    width: 41.67%;
+    background: rgba(102,51,153,.5);
+  }
+
+  .col-6 {
+    width: 50%;
+    background: rgba(102,51,153,.5);
+  }
+  
+
+  .col-7 {
+    width: 58.33%;
+    background: rgba(102,51,153,.57);
+  }
+
+  .col-8 {
+    width: 66.67%;
+    background: rgba(102,51,153,.64);
+  }
+
+  .col-9 {
+    width: 75%;
+    background: rgba(102,51,153,.75);
+  }
+
+  .col-10 {
+    width: 83.33%;
+    background: rgba(102,51,153,.82);
+  }
+
+  .col-11 {
+    width: 91.67%;
+    background: rgba(102,51,153,.89);
+  }
+
+  .col-12 {
+    width: 100%;
+    background: rgba(102,51,153,1);
+  }
+
+/* This is clearfix, clearing content after each row*/
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+div [class^="col"] {
+    height:100px;
+    border: 1px black;
+   
+}
+
+/* gutter width on all col except the last */
+div [class^="col"] {
+    padding-right: 20px;
+   background: #000;
+   
+}
+div [class^="col"]:last-of-type {
+    padding-right: 0px;
+   
+}
